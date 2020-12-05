@@ -8,12 +8,22 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('Develop/public'));
 
+const notes = require('./db.json');
+
 app.get('/', function (req, res){
     res.sendFile(path.join(__dirname, 'Develop/public/index.html'))
 })
 
 app.get('/notes', function (req, res){
     res.sendFile(path.join(__dirname, 'Develop/public/notes.html')) 
+})
+
+app.post('/addNote', function (req, res){
+    const body = req.body;
+    
+    notes.push(body)
+    
+    res.json(body)
 })
 
 app.listen(PORT, function (){
