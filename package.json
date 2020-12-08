@@ -1,25 +1,14 @@
 {
-  "name": "Taker-Of-Them-Notes",
+  "name": "note-taker",
   "version": "1.0.0",
-  "description": "A note taker for users personal and profressional use.",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mdjonestwo/Taker-Of-Them-Notes.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mdjonestwo/Taker-Of-Them-Notes/issues"
-  },
-  "homepage": "https://github.com/mdjonestwo/Taker-Of-Them-Notes#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.6"
+    "express": "^4.16.4"
   }
 }

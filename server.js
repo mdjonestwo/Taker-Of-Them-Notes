@@ -6,12 +6,12 @@ const PORT = 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(__dirname + '/Develop/public'));
+app.use(express.static(__dirname + '/public'));
 
 const notes = require('./db.json');
 
-require("./Develop/routes/apiRoutes")(app)
-require("./Develop/routes/htmlRoutes")(app)
+require("./routes/apiRoutes.js")(app)
+require("./routes/htmlRoutes.js")(app)
 
 
 app.listen(PORT, function (){
